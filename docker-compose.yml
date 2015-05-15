@@ -1,0 +1,6 @@
+hwrnd:
+ build: .
+ privileged: true
+ device:
+  - /dev/hwrnd:/dev/hwrnd 
+ restart: on-failure
