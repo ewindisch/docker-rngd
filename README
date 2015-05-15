@@ -1,0 +1,12 @@
+Feed the Linux kernel with a hwrng
+----------------------------------
+
+This is a packaging of rng-tools which runs rngd.
+
+Usage:
+
+ $ docker run --cap-add SYS_ADMIN --device /dev/hwrng:/dev/hwrng:rw ewindisch/rngd
+
+Usage (ARM):
+
+ $ docker run --cap-add SYS_ADMIN --device /dev/hwrng:/dev/hwrng:rw ewindisch/armhf-rpi-rngd
